@@ -1,0 +1,2 @@
+# date-string-verification
+Dateの文字列をいい感じに扱う検証を行うrepository
