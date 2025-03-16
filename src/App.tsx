@@ -1,24 +1,26 @@
 import { useState } from 'react';
-import { DateExampleSection } from './DateExampleSection';
+import { DateForm } from './components/DateForm/DateForm';
+
+const doNothing = () => {};
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [date1, setDate1] = useState<string>('');
 
   return (
     <>
-      <h1>Sample</h1>
-      <DateExampleSection />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <section className="m-4 p-5 border border-pink-600">
+        <h1 className="text-pink-600 text-3xl font-bold mb-3">
+          Date String Example
+        </h1>
+        <DateForm
+          id={'date-1'}
+          name={'example-1'}
+          value={date1}
+          onChange={(e) => setDate1(e.target.value)}
+          label={'Example1'}
+          onBlur={doNothing}
+        />
+      </section>
     </>
   );
 }
