@@ -1,0 +1,40 @@
+{
+  "name": "date-string-verification",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": "22.14.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint:prettier": "prettier --write 'src/**/*.{ts,tsx}'",
+    "lint:eslint": "eslint --fix 'src/**/*.{ts,tsx}'",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.21.0",
+    "@tailwindcss/vite": "4.0.14",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "@vitejs/plugin-react": "4.3.4",
+    "eslint": "9.21.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-react-hooks": "5.1.0",
+    "eslint-plugin-react-refresh": "0.4.19",
+    "globals": "15.15.0",
+    "prettier": "3.5.3",
+    "tailwindcss": "4.0.14",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.24.1",
+    "vite": "6.2.2",
+    "vitest": "3.0.8"
+  }
+}
